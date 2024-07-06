@@ -33,3 +33,16 @@ print(np.ones(4))
 print(np.ones(4,dtype=int))
 print(np.ones((2,2)))
       
+#adding code below 
+x=np.array([[10,20,30],[40,50,60]])
+flat=x.flatten() #flatten does deep copy
+print("flatten 2d to 1d",flat)
+flat[0]=100
+print("flatten 2d to 1d",flat)
+print("###flatten 2d to 1d",x)
+
+ravel=x.ravel() #ravel does shallow copy
+print("ravel 2d to 1d   ",ravel)
+ravel[0]=1000
+print("ravel 2d to 1d   ",ravel)
+print("###ravel 2d to 1d   ",x)
