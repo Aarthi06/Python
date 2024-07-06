@@ -46,3 +46,9 @@ print("ravel 2d to 1d   ",ravel)
 ravel[0]=1000
 print("ravel 2d to 1d   ",ravel)
 print("###ravel 2d to 1d   ",x)
+
+#statics
+arraynew=np.arange(5,13,3)
+print("mean",np.mean(arraynew))
+print("Median",np.median(arraynew))
+print("std",np.std(arraynew))
