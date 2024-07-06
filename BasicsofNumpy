@@ -52,3 +52,10 @@ arraynew=np.arange(5,13,3)
 print("mean",np.mean(arraynew))
 print("Median",np.median(arraynew))
 print("std",np.std(arraynew))
+
+#min max
+minmaxarray=np.array([[10,202,30],[40,50,60]])
+print("min @ column : ",np.min(minmaxarray,axis=0)) #axis=0 -->column
+print("max @ column : ",np.max(minmaxarray,axis=0)) #axis=0 -->column
+print("min @ row : ",np.min(minmaxarray,axis=1)) #axis=0 -->row
+print("max @ row : ",np.max(minmaxarray,axis=1)) #axis=0 -->row
