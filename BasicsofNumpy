@@ -1,0 +1,35 @@
+import numpy as np
+
+array=np.array([20,30,40]) #1d array
+print(array)
+
+array2=np.array([10,20,30],dtype=float) #define datatype
+print(array2)
+
+print(np.array([10,20.4,30])) #upcast values
+
+print(np.array([[10,30],[40,38]]))
+twodarray=np.array([[10,30],[40,38]])
+print("dimension of array", twodarray.ndim)
+print("shape of array",twodarray.shape)
+print("size of array",twodarray.size)
+
+a=np.array([[10,20,30],[40,50,60]])
+print(a)
+print("shape of a",a.shape)
+b=np.transpose(a) #transpose array
+print("transpose array")
+print(b)
+print("shape of b",b.shape)
+
+c=np.array([10,20,30,40,50,60])
+print(c)
+print("reshape array")
+reshaped=np.reshape(c,(2,-1))#reshaing array -1 numpy automatically align the column or row
+print(reshaped)
+
+print(np.zeros(4))
+print(np.ones(4))
+print(np.ones(4,dtype=int))
+print(np.ones((2,2)))
+      
